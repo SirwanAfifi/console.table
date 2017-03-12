@@ -1,6 +1,6 @@
 'use strict';
 
-console.table = function (arr) {
+console.table = (arr) => {
 
     let keys = Object.keys(arr[0]);
 
@@ -12,7 +12,7 @@ console.table = function (arr) {
 
     str += heading;
 
-    arr.forEach(function (obj) {
+    arr.forEach((obj) => {
 
         str += horizontalLine + Object.values(obj).join('\t\t');
 
